@@ -104,7 +104,8 @@ div.weaponinfo>img {
 
 .weaponicon {
     display: inline-block;
-    background:rgb(28, 134, 25);
+    background:url(img/statsbackground.png) no-repeat;
+    background-size: cover;
     border: 8px solid rgb(235, 235, 0);
     border-radius: 20px;
     width: 256px;
