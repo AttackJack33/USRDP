@@ -73,7 +73,7 @@ h3 {
 }
 
 .weaponinfo {
-    margin-left: 20px;
+    margin-left: 30px;
     display: inline-block;
     background: url(img/statsbackground.png) no-repeat;
     background-size: cover;
@@ -93,6 +93,7 @@ h3 {
     text-align: left;
     padding: 0px 40px 40px;
     color: rgb(228, 228, 228);
+    margin-right: 30px;
 }
 
 div.weaponinfo>img {
