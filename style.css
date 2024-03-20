@@ -75,11 +75,24 @@ h3 {
 .weaponinfo {
     margin-left: 20px;
     display: inline-block;
-    background-color: rgb(66, 66, 66);
+    background: url(img/statsbackground.png) no-repeat;
+    background-size: cover;
     width: 20%;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
+    border: 8px solid rgb(224, 255, 112);
+}
+
+.weapondatainfo {
+    float: right;
+    background-color: darkslategray;
+    width: 760px;
+    display: block;
+    height: fit-content;
+    text-align: left;
+    padding-left: 40px;
+    color: rgb(228, 228, 228);
 }
 
 div.weaponinfo>img {
