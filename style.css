@@ -87,7 +87,9 @@ h3 {
 
 .weapondatainfo {
     float: right;
-    background-color: darkslategray;
+    background-color: rgb(49, 79, 79);
+    border: 10px rgb(30, 49, 49) solid;
+    border-radius: 60px;
     width: 760px;
     display: block;
     height: fit-content;
