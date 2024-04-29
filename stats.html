@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background: url(img/grizzcobackground.png) repeat fixed; background-size: cover;">
+<body>
     <ul>
         <li style="float:left"><a href="index.html"><img src="img/logo.png"></a></li>
         <li><a href="info.html">More Info</a></li>
@@ -24,8 +24,28 @@
     </div>
     <br>
 
+    <!--Navigation Tabs-->
+    <span class="navTabs">
+        <ul id="tabs" style="transform: translateX(0px) translateY(-250px);">
+            <li><a href="#shooters"><img src="img/icon/shootericon.png">Shooters</a></li>
+            <li><a href="#rollers"><img src="img/icon/rollericon.png">Rollers</a></li>
+            <li><a href="#chargers"><img src="img/icon/chargericon.png">Chargers</a></li>
+            <li><a href="#buckets"><img src="img/icon/sloshericon.png">Buckets</a></li>
+            <li><a href="#splatlings"><img src="img/icon/splatlingicon.png">Splatlings</a></li>
+            <li><a href="#dualies"><img src="img/icon/dualieicon.png">Dualies</a></li>
+            <li><a href="#brellas"><img src="img/icon/brellaicon.png">Brellas</a></li>
+            <li><a href="#blasters"><img src="img/icon/blastericon.png">Blasters</a></li>
+            <li><a href="#brushes"><img src="img/icon/brushicon.png">Brushes</a></li>
+            <li><a href="#stringers"><img src="img/icon/stringericon.png">Stringers</a></li>
+            <li><a href="#splatanas"><img src="img/icon/splatanaicon.png">Splatanas</a></li>
+            <li><a href="#grizzco"><img src="img/grizzlogo.png">Grizzco</a></li>
+        </ul>
+    </span>
+<button style="transform: translateX(-315px) translateY(-86px);" id="buttonTabs" onclick="openTab()">></button>
     <!--If you want me to organize this, fight me-->
 
+    <h1 id="shooters" style="margin: 80px; color: white;">Shooters <img src="img/icon/shootericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    
     <!--Splattershot-->
     <div class="weaponicon">
         <img src="img/inkshot.png">
@@ -300,7 +320,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Rollers <img src="img/icon/rollericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="rollers" style="margin: 80px; color: white;">Rollers <img src="img/icon/rollericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Splat Roller-->
     <div class="weaponicon">
         <img src="img/inkroller.png">
@@ -407,7 +427,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Chargers <img src="img/icon/chargericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="chargers" style="margin: 80px; color: white;">Chargers <img src="img/icon/chargericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Splat Charger-->
     <div class="weaponicon">
         <img src="img/charge.png">
@@ -535,7 +555,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Buckets <img src="img/icon/sloshericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="buckets" style="margin: 80px; color: white;">Buckets <img src="img/icon/sloshericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Slosher-->
     <div class="weaponicon">
         <img src="img/bucket.png">
@@ -663,7 +683,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Splatlings <img src="img/icon/splatlingicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="splatlings" style="margin: 80px; color: white;">Splatlings <img src="img/icon/splatlingicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Heavy Splatling-->
     <div class="weaponicon">
         <img src="img/heavy.png">
@@ -791,7 +811,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Dualies <img src="img/icon/dualieicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="dualies" style="margin: 80px; color: white;">Dualies <img src="img/icon/dualieicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Splat Dualies-->
     <div class="weaponicon">
         <img src="img/dualie.png">
@@ -919,7 +939,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Brellas <img src="img/icon/brellaicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="brellas" style="margin: 80px; color: white;">Brellas <img src="img/icon/brellaicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Splat Brella-->
     <div class="weaponicon">
         <img src="img/brella.png">
@@ -1005,7 +1025,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Blasters <img src="img/icon/blastericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="blasters" style="margin: 80px; color: white;">Blasters <img src="img/icon/blastericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Blaster-->
     <div class="weaponicon">
         <img src="img/blast.png">
@@ -1154,7 +1174,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Brushes <img src="img/icon/brushicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="brushes" style="margin: 80px; color: white;">Brushes <img src="img/icon/brushicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Inkbrush-->
     <div class="weaponicon">
         <img src="img/ink.png">
@@ -1219,7 +1239,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Stringers <img src="img/icon/stringericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="stringers" style="margin: 80px; color: white;">Stringers <img src="img/icon/stringericon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Tri-Stringer-->
     <div class="weaponicon">
         <img src="img/bow.png">
@@ -1263,7 +1283,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Splatanas <img src="img/icon/splatanaicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="splatanas" style="margin: 80px; color: white;">Splatanas <img src="img/icon/splatanaicon.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Splatana Stamper-->
     <div class="weaponicon">
         <img src="img/sword.png">
@@ -1307,7 +1327,7 @@
         <p><a>Click here to learn more</a></p>
     </div>
     <br>
-    <h1 style="margin: 80px; color: white;">Grizzco Special <img src="img/grizzlogo.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
+    <h1 id="grizzco" style="margin: 80px; color: white;">Grizzco Special <img src="img/grizzlogo.png" alt="" style="height: 80px; vertical-align: middle;"></h1>
     <!--Grizzco Blaster-->
     <div class="weaponicon">
         <img src="img/grizzblast.png">

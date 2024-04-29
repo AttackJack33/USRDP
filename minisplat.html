@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background: url(img/grizzcobackground.png) repeat fixed; background-size: cover;">
+<body>
     <ul>
         <li style="float:left"><a href="index.html"><img src="img/logo.png"></a></li>
         <li><a href="info.html">More Info</a></li>
@@ -27,24 +27,32 @@
         <h3>Rank: <img src="img/rank/Brank.png" style="height: 64pt; vertical-align: middle;"></h3>
         <div id="progressBarContainer">
             <span class="stattext">Range 62/100</span>
-            <div class="progressBar" id="progressBar94" style="width: 62%">
+            <div class="progressBar" style="width: 62%">
+            </div>
+        </div>
+        <div id="progressBarContainer">
+            <span class="stattext">Damage 35</span>
+            <div class="progressBar" style="width: 35%">
             </div>
         </div>
         <div id="progressBarContainer">
             <span class="stattext">Charge Speed 80/100</span>
-            <div class="progressBar" id="progressBar95" style="width: 80%">
+            <div class="progressBar" style="width: 80%">
             </div>
         </div>
         <div id="progressBarContainer">
             <span class="stattext">Handling 90/100</span>
-            <div class="progressBar" id="progressBar96" style="width: 90%">
+            <div class="progressBar" style="width: 90%">
             </div>
         </div>
-        <div id="progressBarContainer">
-            <span class="stattext">Damage 35/100</span>
-            <div class="progressBar" id="progressBarData" style="width: 35%">
+        <div id="expandInfo" style="display: none">
+            <div id="progressBarContainer">
+                <span class="stattext">Firing Duration (Full Charge) 1.2s</span>
+                <div class="progressBar" style="width: 100%">
+                </div>
             </div>
         </div>
+        <button style="display: none;" onclick="moreInfo()" id="moreInfo">More Info</button>
     </div>
 
     <div class="weapondatainfo">
@@ -54,18 +62,16 @@
         with the fastest charge rate and mobility of all the splatlings. 
         This weapon surprisingly a middleweight weapon, meaning that you 
         move faster than heavyweight but slower than lightweight. While the 
-        Mini Splatling has a lot of mobilility, it does not handle bosses 
+        Mini Splatling has a lot of mobility, it does not handle bosses 
         very well with its low damage
-        </span>
         <img style="float: right; margin-left: 10px;" src="img/1280x720px.png">
-        <span class="infotext">
         output and the amount it fires per charge.
         with it having a poor damage output, it can go toe to toe with lessers 
         and sometimes large swarms due to its fast charge rate. The Mini Splatling's 
-        speed makes it a powerhouse upclose, making it great for CQC (Close Quarters 
+        speed makes it a powerhouse up close, making it great for CQC (Close Quarters 
         Combat). This, along with its ability to charge fast helps deal with some bosses 
         like Scrappers, Steel Eels, Maws, and Flipper Floppers. Its paint output is 
-        also acceptional, allowing it to take down Flipper Floppers faster than you'd think.
+        also exceptional, allowing it to take down Flipper Floppers faster than you'd think.
         Watch out for Steel Heads though as the bomb on its head cannot be reached from 
         a safe distance unless you are on elevated ground.
         </span>
@@ -75,7 +81,7 @@
         <h2>Role(s)</h2>
         <h4><img src="img/role/crowd.png" alt="Crow control"> - Handles crowd control</h4>
         <h4><img src="img/role/delivery.png" alt="Egg Delivery"> - Deliver Golden Eggs</h4>
-        <h4><img src="img/role/turf.png" alt="Turfing"> - Paint the enviornment</h4>
+        <h4><img src="img/role/turf.png" alt="Turfing"> - Paint the environment</h4>
     </div>
 
     <!--Leave this at the bottom as it will be the footer-->

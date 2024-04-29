@@ -310,3 +310,53 @@ var progressBarsData = [
 progressBarsData.forEach(bar => {
     updateProgressBar(bar.id, bar.value, bar.maxValue);
 });
+
+function openTab() {
+    if(document.getElementById("buttonTabs").style.transform == 'translateX(-315px) translateY(-86px)'){
+        document.getElementById("buttonTabs").style.transform = 'translateX(0px) translateY(-86px)';
+        document.getElementById("buttonTabs").innerHTML = '<';
+        console.log("Closed");
+    }
+    else {
+        document.getElementById("buttonTabs").style.transform = 'translateX(-315px) translateY(-86px)';
+        document.getElementById("buttonTabs").innerHTML = '>';
+        console.log("Opened")
+    }
+    if(document.getElementById("tabs").style.transform == 'translateX(0px) translateY(-250px)'){
+        document.getElementById("tabs").style.transform = 'translateX(320px) translateY(-250px)';
+        console.log("Tabs Closed");
+    }
+    else {
+        document.getElementById("tabs").style.transform = 'translateX(0px) translateY(-250px)';
+        console.log("Tabs Opened");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Scrapped Idea
+function moreInfo() {
+    if(document.getElementById("expandInfo").style.display == 'none'){
+        document.getElementById("expandInfo").style.display = 'block';
+    }
+    else{
+        document.getElementById("expandInfo").style.display = 'none';
+    }
+
+    if(document.getElementById("moreInfo").innerHTML == 'More Info'){
+        document.getElementById("moreInfo").innerHTML = 'Less Info';
+    }
+    else{
+        document.getElementById("moreInfo").innerHTML = 'More Info';
+    }
+}
